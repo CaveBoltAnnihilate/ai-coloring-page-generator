@@ -1,0 +1,1 @@
+"""Typed data models — pydantic for anything crossing a process boundary."""

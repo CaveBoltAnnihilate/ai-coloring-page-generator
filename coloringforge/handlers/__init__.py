@@ -1,0 +1,1 @@
+"""Feature handlers — one per pipeline stage plus GUI and CLI front doors."""

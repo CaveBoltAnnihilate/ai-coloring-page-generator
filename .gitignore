@@ -1,0 +1,43 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.spec
+
+# Local model weights (downloaded on first run, never committed)
+models/weights/
+*.safetensors
+*.ckpt
+*.onnx
+
+# User output
+output/
+exports/
+*.pdf
+*.png
+!assets/samples/*.png
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Logs & local config
+*.log
+config/local.yaml
+config/secrets.yaml

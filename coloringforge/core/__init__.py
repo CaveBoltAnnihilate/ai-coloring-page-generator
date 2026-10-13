@@ -1,0 +1,1 @@
+"""Core engine: context, pipeline orchestration, device routing."""

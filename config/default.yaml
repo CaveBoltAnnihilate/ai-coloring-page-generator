@@ -1,0 +1,42 @@
+app:
+  name: "ColoringForge"
+  version: "0.9.3"
+  theme: "paper"
+  autosave_interval_sec: 45
+
+paths:
+  models_dir: "models/weights"
+  output_dir: "output"
+  cache_dir: "cache"
+  log_dir: "logs"
+
+generation:
+  default_pipeline: "lineart-sd15"
+  steps: 28
+  guidance_scale: 7.5
+  width: 1024
+  height: 1024
+  seed: -1
+  batch_size: 1
+  line_weight: 2
+  threshold_block: 14
+  threshold_c: 42
+  denoise_strength: 0.72
+
+preprocess:
+  auto_contrast: true
+  max_edge_px: 2048
+  grayscale: true
+  blur_kernel: 3
+
+export:
+  dpi: 300
+  page_size: "letter"
+  margin_mm: 12
+  bleed_mm: 3
+  include_cover: true
+
+device:
+  prefer: "auto"   # auto | cuda | cpu
+  half_precision: true
+  vram_guard_gb: 6
